@@ -10,14 +10,16 @@
     padding: 0;
     /* transition: 4s; */
     text-decoration: none;
-    text-align: center;
+    /* text-align: center; */
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
     text-align: center;
     /* border: 1px solid #0a0adfa3; */
-    padding-left: 0px;
+    /* padding-left: 0px; */
     /* margin-left: 4px; */
+    /* height: max-content; */
+    /* min-height: max-content; */
 }
 
 
@@ -214,7 +216,7 @@ body {}
 
 .menu {
     flex-direction: row;
-    padding: 16px;
+    padding: 16px 0px;
     justify-content: space-around;
     width: 100%;
 }
@@ -321,6 +323,8 @@ div#map {
 
 div#sliderworldmap {
     height: max-content;
+    /* margin-bottom: 112px; */
+    /* min-height: 1372px; */
 }
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -347,31 +351,32 @@ div#mapContainer {
 
 div#countryContainer {
     width: 100%;
-    height: 1230px;
-    background-color: #ffffff;
+    height: max-content;
+    /* background-color: #ffffff; */
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    background-color: #767676;
+    background-color: #000000;
     color: #ffffff;
     padding: -2px;
+    /* margin-bottom: 62px; */
 }
 
 .contryinfo {
-    height: 380px;
+    height: 100%;
     /* flex-direction: revert; */
     width: 100%;
-    background-color: #3a3a3a;
+    /* background-color: #3a3a3a; */
     /* align-items: flex-start; */
     padding: 8px 0px 8px 0px;
 }
 
 p#country {
-    padding: 11px;
+    padding: 7px 8px;
     /* color: #040404; */
     text-align: left;
     /* color: rebeccapurple; */
-    width: 50%;
+    width: 100%;
 }
 
 h1#countrynanme {
@@ -381,6 +386,7 @@ h1#countrynanme {
     margin: 4px;
     flex-direction: row;
     min-width: 49%;
+    padding: 16px;
 }
 
 .nav {
@@ -389,12 +395,12 @@ h1#countrynanme {
     background-color: #000000db;
     justify-content: space-evenly;
     color: white;
-    padding: 14px 0px;
+    /* padding: 14px 0px; */
 }
 
 .organasationContainer {
     justify-content: flex-start;
-    height: 800px;
+    height: max-content;
     width: 100%;
     position: relative;
     background-color: #121212;
@@ -414,18 +420,16 @@ p.donate {
 }
 
 .organasations {
-    /* background: aliceblue; */
+    height: 58px;
+    display: flex;
+    flex-direction: row;
+    width: 75%;
+    justify-content: flex-start;
+    background-color: #000000db;
     overflow: hidden;
     overflow-x: scroll;
-    height: 168px;
-    display: inline-block;
-    /* display: inline-flex; */
-    /* position: relative; */
-    left: 0;
-    flex-direction: row;
-    width: 100%;
-    background-color: #000000db;
-    padding: 8px 0px;
+    /* min-width: 100%; */
+    /* position: absolute; */
 }
 
 .organasations p {
@@ -437,15 +441,15 @@ p.donate {
     margin-left: 11px;
     font-size: 14px;
     color: #ffffff;
-    background-color: grey;
+    background-color: #ff3333;
     padding: 8px;
     border-radius: 23px;
-    display: inline-block;
+    /* display: inline-block; */
 }
 
 .organsationsinfo {
     position: relative;
-    height: 490px;
+    /* height: 264px; */
     justify-content: flex-start;
     /* padding: 14px; */
     background-image: url(homeless.PNG);
@@ -458,8 +462,9 @@ h1.title {
     font-family: system-ui;
     font-size: 26px;
     margin: 9px;
-    background-color: #12121273;
-    padding: 4px;
+    /* background-color: #12121273; */
+    padding: 1px;
+    color: wheat;
 }
 
 h3#population {
@@ -469,8 +474,8 @@ h3#population {
 
 div#organasationpicture {
     background-image: url(britishredcross.png);
-    height: 50px;
-    width: 50px;
+    height: 30px;
+    width: 30px;
     margin: 7px;
 }
 
@@ -479,7 +484,7 @@ h1#organasationtitle {
 }
 
 .countryinfor {
-    width: 85%;
+    width: 100%;
     align-items: flex-start;
 }
 
@@ -487,6 +492,7 @@ p.organtext {
     /* width: 68%; */
     text-align: left;
     padding: 1px 8px 0px 17px;
+    color: white;
 }
 
 .organsationtextcontainer {
@@ -499,23 +505,28 @@ div#topics {
     flex-direction: row;
     /* background-color: #03002c; */
     color: white;
-    width: 47%;
-    justify-content: space-around;
+    width: 93%;
+    justify-content: flex-start;
     padding: 13px;
     margin-bottom: -5px;
+    overflow: hidden;
+    overflow-x: scroll;
 }
 
 #topics p {
     background-color: white;
     padding: 8px;
+    margin-left: 12px;
     color: #8bc8e3;
     font-size: 12px;
     border: 1px solid grey;
     border-radius: 18px;
+    min-width: 65px;
 }
 
 p#currentTopic {
-    color: #e50000;
+    /* color: #e50000; */
+    background-color: grey;
 }
 
 h1#title {
@@ -529,10 +540,13 @@ p#stastics {
     text-align: right;
 }
 
-div#bar {}
+div#bar {
+    width: 100%;
+    height: 70vh;
+}
 
 img#link {
-    height: 30px;
+    height: 15px;
     /* width: 45px; */
     /* float: right; */
     /* margin-left: 35px; */
@@ -580,4 +594,154 @@ h1#cresearchs {
     color: #bfbfbf;
     font-family: system-ui;
     font-size: 40px;
+}
+
+.newscolumn {
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    /* justify-content: flex-start; */
+    /* align-items: flex-start; */
+    position: relative;
+}
+
+.newsrow {
+    width: 100%;
+    height: 100%;
+}
+
+div#newscontainer {
+    /* min-height: 2000px; */
+    height: max-content;
+    width: 100%;
+    /* min-height: max-content; */
+    min-height: 61vh;
+}
+
+div#newsimage {
+    background-image: url(situations.jpg);
+    height: 70%;
+    width: 100%;
+    min-height: 57vh;
+    background-size: cover;
+}
+
+div#newsMediaColumn {
+    height: 100%;
+    width: 50%;
+    /* justify-content: flex-start; */
+    top: 0;
+    left: 0;
+    min-height: 50vh;
+}
+
+div#newsinforColumn {
+    width: 50%;
+    /* height: 962px; */
+    /* overflow: hidden; */
+    justify-content: center;
+    word-wrap: break-word;
+}
+
+.donationcolumn {
+    height: 450px;
+    width: 100%;
+}
+
+div#donate_news1 {
+    height: 100%;
+    width: 100%;
+}
+
+.newsContainer {
+    height: 98%;
+    width: 100%;
+    flex-direction: row;
+}
+
+.newsdonateprofile {
+    height: 100%;
+    width: 50%;
+}
+
+.newsdonateinfor {
+    height: 100%;
+    width: 50%;
+}
+
+div#donation_pic {
+    background-image: url(britishredcross.png);
+    height: 100px;
+    width: 100px;
+}
+
+div#donation_Ttle {
+    margin: 9px;
+}
+
+.kiteqio {
+    height: 500px;
+    width: 100%;
+    background-color: #1c1c1c;
+    color: white;
+}
+
+.kiteqicontainer {
+    height: 100%;
+    width: 52%;
+}
+
+.kiteqicontainer h1 {
+    font-family: system-ui;
+}
+
+.kiteqicontainer p {
+    margin-top: 34px;
+    font-size: 17px;
+}
+
+.volunteering {
+    height: 400px;
+    width: 100%;
+    background-image: url(volunteering1.jpeg);
+    background-size: cover;
+}
+
+.volunteering h1 {
+    font-size: 88px;
+    font-family: system-ui;
+    color: white;
+}
+
+.volunteering p {
+    font-size: 36px;
+    margin-top: 12px;
+    color: #d9d9d9;
+    /* font-family: sans-serif; */
+}
+
+.about p {
+    font-size: 18px;
+    color: #d9d9d9;
+    margin: 34px;
+    width: 60%;
+}
+
+div#world-map {
+    height: 100%;
+    width: 100% !important;
+    padding: 8px 0px;
+}
+
+#newsinforColumn p {
+    width: 100%;
+    /* max-width: 111px; */
+    /* min-width: 92px; */
+    color: blue;
+    word-wrap: break-word;
+    /* word-wrap: normal; */
+    /* white-space: nowrap; */
+    /* overflow: hidden; */
+    /* text-overflow: ellipsis; */
+    display: block;
 }
